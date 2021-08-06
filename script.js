@@ -30,10 +30,9 @@ function createGraph() {
     let percentShare = (parseFloat((numOptions.value).replace(/,/g,'')) / 100000000); //divide by number of outstanding shares
     
     let equityBar = {
-        x: ['Input Valuation', '2x', '3x', '5x', '10x'],
+        x: ['Input Valuation', '2x', '3x', '5x'],
         y: [(valuation.value*percentShare)/4, 2*(valuation.value*percentShare)/4, 
-            3*(valuation.value*percentShare)/4, 5*(valuation.value*percentShare)/4, 
-            7*(valuation.value*percentShare)/4],
+            3*(valuation.value*percentShare)/4, 5*(valuation.value*percentShare)/4],
         name: 'Annual Equity',
         type: 'bar',
         marker: {
@@ -43,10 +42,9 @@ function createGraph() {
     };
     
     let salaryBar = {
-        x: ['Input Valuation', '2x', '3x', '5x', '10x'],
+        x: ['Input Valuation', '2x', '3x', '5x'],
         y: [parseFloat((salary.value).replace(/,/g,'')), parseFloat((salary.value).replace(/,/g,'')), 
-        parseFloat((salary.value).replace(/,/g,'')), parseFloat((salary.value).replace(/,/g,'')), 
-        parseFloat((salary.value).replace(/,/g,''))],
+        parseFloat((salary.value).replace(/,/g,'')), parseFloat((salary.value).replace(/,/g,''))],
         name: 'Annual Salary',
         type: 'bar',
         marker: {
