@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Offer Calculator</title>
+    <meta charset="UTF-8"/>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer type="text/javascript"></script>
+    <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="title">
+            <h1>Offer Calculator &#128184;</h1>
+        </div>
+        <div id="input-fields">
+            <form method="post" action="#" id="form">
+                <label for="salary">Enter Salary: </label>
+                <div id="salary-div">
+                    <span id="dollar">$</span>
+                    <input type="text" name="salary" id="salary" value="" placeholder="100,000" maxlength="8">
+                </div>
+                <br>
+                <label for="equity">Enter # of Options: </label>
+                <div id="equity-div">
+                    <input type="text" name="equity" id="equity" value="" placeholder="1,000" maxlength="6">
+                </div>
+                <div id="valuation-div">
+                    <label for="valuation">Valuation: <span style="font-weight: normal; color: black">$</span>
+                        <span id="valuation-value" style="font-weight: normal;"></span> <span id="emoji"></span></label>
+                    <input type="range" name="valuation" id="valuation" step="100000000" 
+                    min="100000000" max="10000000000" value="100000000">
+                </div>
+                <br><br>
+            </form>
+        </div>
+        <div id="stacked-bar"></div>
+        <br>
+        <footer>
+            <small id="disclaimer" style="font-style: italic;">* This calculator is a tool to illustrate the 
+                potential value of your equity if [THECOMPANY] were to reach certain valuation thresholds. 
+                We cannot gurantee we will be worth any of the shown amounts in the future.  
+                Disclaimer disclaimer disclaimer disclaimer 
+                disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer 
+                disclaimer disclaimer disclaimer disclaimer.</small>
+        </footer>
+    </div>
+</body>
+</html>

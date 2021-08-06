@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffffb;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#app {
+    border: 5px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
+    color: #118C4F;
+}
+
+h1, form {
+    margin: 20px auto 0;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#salary-div, #equity-div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#dollar {
+    border: 2px solid black;
+    background-color: #5e5e5e42;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    font-size: 32px;
+    padding: .5rem .8rem;
+    margin-bottom: 10px;
+    color: #118C4F;
+}
+
+#salary {
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+    font-size: 32px;
+    padding: .5rem .8rem;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#equity {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 32px;
+    margin: 0 0 20px;
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+#valuation {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 25px; 
+    background: #c8c9c7;
+    opacity: 0.7; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 50px;
+}
+
+#valuation-value {
+    color: #000000;
+}
+
+#valuation::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: #118C4F; 
+    cursor: pointer; 
+    border-radius: 50px;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ outline-width: 0;
+ background-color: white;
+ -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+#disclaimer {
+    color: #000000;
+}
